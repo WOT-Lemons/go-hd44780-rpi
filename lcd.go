@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/d2r2/go-i2c"
+	"github.com/WOT-Lemons/go-i2c"
 )
 
 const (
@@ -14,13 +14,13 @@ const (
 	CMD_Return_Home          = 0x02
 	CMD_Entry_Mode           = 0x04
 	CMD_Display_Control      = 0x08
-	CMD_Cursor_Shift		 = 0x10
+	CMD_Cursor_Shift				 = 0x10
 	CMD_Function_Set         = 0x20
 	CMD_CGRAM_Set            = 0x40
 	CMD_DDRAM_Set            = 0x80
 
 	// Flags for display entry mode (CMD_Entry_Mode)
-	OPT_EntryLeft				= 0x02
+	OPT_EntryLeft					= 0x02
 	OPT_EntryRight				= 0x00
 	OPT_Increment 				= 0x01 
 	OPT_Decrement 				= 0x00
@@ -35,9 +35,9 @@ const (
 	
 	// Flags for display/cursor move ()
 	OPT_Display_Move  	= 0x08
-	OPT_Cursor_Move		= 0x00
+	OPT_Cursor_Move			= 0x00
 	OPT_Move_Right    	= 0x04
-	OPT_Move_Left    	= 0x00
+	OPT_Move_Left    		= 0x00
 	
 	// Flags for function set (CMD_Function_Set)
 	OPT_8Bit_Mode      = 0x10
