@@ -87,7 +87,7 @@ type Lcd struct {
 
 func NewLcd(i2c *i2c.I2C, lcdType LcdType) (*Lcd, error) {
 	this := &Lcd{i2c: i2c,
-		backlight: false,
+		backlight: true,
 		lcdType: lcdType,
 		writeStrobeDelay: 200,
 		resetStrobeDelay: 30,
